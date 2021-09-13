@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Title bar-->
+    <RelativeLayout style="@style/TitleBarLayout">
+        <!-- Title bar's title -->
+        <TextView
+            style="@style/TitleBarTitleTextView"
+            android:text="@string/user_surveys_title_bar_text" />
+
+        <!-- Left button -->
+        <Button
+            android:id="@+id/signOutButton"
+            style="@style/BaseTitleBarLeftButton"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="@string/user_surveys_title_bar_left_button" />
+
+        <!-- Right button -->
+        <Button
+            android:id="@+id/newSurveyButton"
+            style="@style/BaseTitleBarRightButton"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:text="@string/user_surveys_title_bar_right_button" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/userSurveysListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

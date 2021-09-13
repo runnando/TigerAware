@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.missouri.cs.tigeraware.ui.QuestionDetailActivity">
+
+    <!--Title bar-->
+    <RelativeLayout style="@style/TitleBarLayout">
+        <!-- Title bar's title -->
+        <TextView
+            style="@style/TitleBarTitleTextView"
+            android:text="@string/question_detail_title_bar_text" />
+
+        <!-- Left button -->
+        <Button
+            android:id="@+id/cancelButton"
+            style="@style/BaseTitleBarLeftButton"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="@string/question_detail_left_button" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/questionLabelEditText"
+        style="@style/BaseEditText"
+        android:layout_marginTop="15dp"
+        android:hint="@string/question_label"
+        android:inputType="text" />
+
+    <Spinner
+        android:id="@+id/questionTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:entries="@array/questionTypes" />
+
+    <FrameLayout
+        android:id="@+id/questionBodyFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" />
+
+    <!-- TODO 这个按钮可以抽取样式-->
+    <Button
+        android:id="@+id/saveQuestionButton"
+        style="@style/BaseRoundedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/save_question" />
+
+
+</LinearLayout>

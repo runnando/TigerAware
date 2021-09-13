@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Title bar-->
+    <RelativeLayout style="@style/TitleBarLayout">
+        <!-- Title bar's title -->
+        <TextView
+            style="@style/TitleBarTitleTextView"
+            android:text="@string/app_name" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/surveysListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.missouri.cs.tigeraware.ui.SurveyDetailActivity">
+
+    <!--Title bar-->
+    <RelativeLayout style="@style/TitleBarLayout">
+        <!-- Title bar's title -->
+        <TextView
+            style="@style/TitleBarTitleTextView"
+            android:text="@string/survey_detail_title_bar_text" />
+
+        <!-- Left button -->
+        <Button
+            android:id="@+id/cancelButton"
+            style="@style/BaseTitleBarLeftButton"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="@string/survey_detail_left_button" />
+
+        <!-- Right button -->
+        <Button
+            android:id="@+id/saveButton"
+            style="@style/BaseTitleBarRightButton"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:text="@string/survey_detail_right_button" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/surveyNameEditText"
+        style="@style/BaseEditText"
+        android:layout_marginTop="15dp"
+        android:hint="@string/survey_name"
+        android:inputType="text" />
+
+    <ListView
+        android:id="@+id/questionsListView"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+    </ListView>
+
+    <!-- TODO 这个按钮可以抽取样式-->
+    <Button
+        android:id="@+id/addQuestionButton"
+        style="@style/BaseRoundedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/add_a_question" />
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Main ViewPager-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mainViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!--<include layout="@layout/bottom_tab_bar" />-->
+    <!--Bottom Bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorBottomBar"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/surveys_tab_item"
+            layout="@layout/main_surveys_tab_item" />
+
+        <include
+            android:id="@+id/user_surveys_tab_item"
+            layout="@layout/main_user_surveys_tab_item" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

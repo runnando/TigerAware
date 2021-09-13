@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:descendantFocusability="beforeDescendants"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/tabImageButton"
+        style="@style/TabImage"
+        android:src="@drawable/main_surveys_tab_item_button_selector" />
+
+    <TextView
+        android:id="@+id/tabTextView"
+        style="@style/TabTextNormal"
+        android:text="@string/surveys_tab_text" />
+
+</LinearLayout>
